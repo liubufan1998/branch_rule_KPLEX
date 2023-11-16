@@ -94,7 +94,7 @@ bool PreProcess(int S) {
         }
     }
     n = 0;
-    for(int i = 0; i < N; ++ i) {
+    for(int i = 0; i < N; ++ i) { // 这里就是把删除后还剩余的顶点的原始序号记录下来，方便后面进行恢复。
         if(!outcore[i])
             nV[i] = n, oriID[n++] = i;
     }
